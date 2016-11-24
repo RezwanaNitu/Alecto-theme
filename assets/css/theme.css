@@ -1,0 +1,112 @@
+/* Import Proxima Nova Regular Font */
+@font-face { font-family: Proxima Nova; src: url(../fonts/proxima_nova_regular.ttf), url(../fonts/proxima_nova_regular.eot), url(../fonts/proxima_nova_regular.woff); }
+
+/* Font awesome customization */
+.fa { vertical-align: middle; }
+
+/* Theme - Navbar */
+.theme-navbar{ background-color: transparent; padding: 1.5em 0; }
+.theme-navbar .navbar-brand img{ width: 70%; }
+.theme-navbar .navbar-nav li a{ background-color: transparent; color: white; transition: all 0.1s ease; font-family: 'Raleway', 'sans-serif'; font-weight: bold; font-size: .8em; }
+.theme-navbar .navbar-nav li a:hover{ color: #17daa3; }
+.theme-navbar.affix{ background-color: rgba(0,0,0,.8); padding: .5em 0; }
+
+/* Section - Default */
+section.section{ position: relative; padding: 5em 0; box-sizing: border-box; }
+section.section .headline{ font-family: 'Raleway', 'sans-serif'; font-weight: 300; font-size: 2.8em; color: #576671; }
+section.section .headline span{ display: block; font-size: .3em; color: #87949e; font-family: 'Proxima Nova', 'sans-serif'; margin-bottom: 3em; }
+section.section .headline span::before{ content: ''; display: block; margin: 1.5em auto; border-top: 1px solid #2dddac; width: 2em; }
+
+/* Section - Home */
+section.section-home{ min-height: 100vh; background: url(../img/home_bg.png) no-repeat center center; background-size: cover; color: white; }
+section.section-home .arrow-down{ position: absolute; display: block; bottom: 3em; left: 50%; transform: translateX(-50%); color: white; }
+
+/* Section - About */
+section.section-about .icon-image{ height: 6em; width: 6em; border-radius: 50%; margin: 0 auto; background-color: #edeff1; color: #87949e; display: table; }
+section.section-about .icon-image > i{ display: table-cell; vertical-align: middle; transition: all 1s ease }
+section.section-about .icon-image:hover{ background-color: #17daa3; color: white; cursor: pointer; }
+section.section-about .caption-title{ margin: 2em 0 1em 0; font-family: 'Raleway', 'sans-serif'; font-weight: 700; }
+section.section-about .caption-description{ color: #a5aeb6; line-height: 1.5em; }
+section.section-about .btn{ margin-top: 3em; transform: scale(1.1); }
+
+/*Section - Photo & Mac & Map */
+section.section-photo{ background-color: #f9f9fa; }
+section.section-map{ background: url(../img/world_flat_map.png) no-repeat; background-position: right 0 center; background-size: 45%; }
+section.section-photo p, section.section-mac p, section.section-map p{ padding: 1.2em 0; font-family: 'Proxima Nova', 'sans-serif'; color: #a5aeb6; }
+
+/* Section - Services */
+section.section-services{ background-color: #f9f9fa; }
+section.section-services .media{ margin: 3em 0; }
+section.section-services .media .icon-media{ width: 3.5em; height: 3.5em; margin-right: 2em; line-height: 3.5em; text-align: center; background-color: white; border-radius: 50%; }
+section.section-services .media .icon-media i{ color: #17daa3; margin-left: .5em; }
+section.section-services .media .media-body .media-heading{ font-family: 'Raleway', 'sans-serif'; font-weight: 300; color: #576671; }
+section.section-services .media .media-body p{ padding: 1em 0; font-family: 'Proxima Nova', 'sans-serif'; color: #a5aeb6; }
+
+
+/* Section - Opinions */
+section.section-opinions{ min-height: 70vh; position: relative; background: url(../img/opinions_bg.png) no-repeat center center; background-size: cover; color: white; }
+section.section-opinions .carousel-customized .carousel-inner .item img{ display: inline-block; margin: 0 auto; }
+section.section-opinions .carousel-customized .carousel-inner .item h3 label{ color: #17daa3; font-weight: normal; }
+section.section-opinions .carousel-customized .carousel-inner .item .opinion-by{ color: #555555; }
+
+/* Section - Team */
+section.section-team{ padding-bottom: 0; }
+section.section-team .flex-box{ list-style: none; margin: 0; padding: 0; margin-top: 3em; display: flex; flex-flow: row wrap; justify-content: space-around; }
+section.section-team .flex-box li{ display: inline-block; position: relative; width: 20%; padding: 0; margin: 0; }
+section.section-team .flex-box li a img{ width: 100%; }
+section.section-team .flex-box li .img-overlay{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #2dddac; color: white; text-align: center; font-family: 'Raleway', 'sans-serif'; font-weight: 300; font-size: 2em; transition: all 0.35s ease; display: none;  }
+section.section-team .flex-box li .img-overlay.open{ display: table; }
+section.section-team .flex-box li .img-overlay > .overlay-content{ display: table-cell; vertical-align: middle; }
+	
+	/* Device - xs - Mobile */
+	@media screen and (max-width: 480px){
+		section.section-team .flex-box li .img-overlay{ font-size: .7em; }
+	}
+	
+	/* Device - sm - Tab */
+	@media (min-width: 481px) and (max-width: 768px){
+		section.section-team .flex-box li .img-overlay{ font-size: 1em; }
+	}
+
+	/* Device - md - Laptop */
+	@media (min-width: 769px) and (max-width: 1199px){
+		section.section-team .flex-box li .img-overlay{ font-size: 1.2em; }
+	}
+
+/* Section - Pricing */
+section.section-pricing{ background-color: #eee; }
+section.section-pricing .price-card{ background-color: white; border-radius: 4px; min-height: 40px; margin-bottom: 30px; }
+section.section-pricing .price-card-heading{ border-bottom: 1px solid #eeeff1; padding: 1.5em;  }
+section.section-pricing .price-card-heading .price{ color: #2edbaa; font-family: 'Raleway', 'sans-serif'; font-weight: 300;  }
+section.section-pricing .price-card-heading .price span{ font-size: 1.2em; }
+section.section-pricing .price-card-heading .price-licence{ color: #d3d8db; font-family: 'Proxima Nova', 'sans-serif'; }
+section.section-pricing .price-card-body{ padding: 1.5em 1.8em; }
+section.section-pricing .price-card-body .list-unstyled li{ margin: 1em 0; color: #a5aeb6; font-family: 'Proxima Nova', 'sans-serif'; }
+section.section-pricing .price-card-footer .btn-price{ padding: 1em; background-color: #1edaa5; color: white; border-radius: 0; font-family: 'Proxima Nova', 'sans-serif'; text-align: justify; text-transform: uppercase; }
+
+/* Section - Try Now */
+section.section-tryNow{ min-height: 65vh; background: url(../img/try_our_template_bg.png) no-repeat center center; background-size: cover; color: white; font-family: 'Raleway', 'sans-serif'; font-weight: 300; }
+section.section-tryNow .btn{ margin-top: 5em; }
+
+/* Footer */
+footer.footer{ padding: 2em 0; box-sizing: border-box; min-height: 70vh; background: url(../img/footer_bg.png) no-repeat; background-position: top 0px center; background-size: 55%; }
+footer.footer li .brand-logo{ width: 75%; }
+footer.footer li, footer.footer li a{ font-family: 'Proxima Nova', 'sans-serif'; }
+footer.footer li a{ color: #c9cfd3; }
+footer.footer li, footer.footer li a:hover, footer.footer li a:active, footer.footer li a:focus{ color: #87949e; text-decoration: none; }
+
+/* All Carousel Design */
+.carousel-customized .carousel-indicators{ bottom: -50px; }
+.carousel-customized .carousel-control.left, .carousel-customized .carousel-control.right{ width: 3%; background-image: none; }
+.carousel-customized .carousel-control.left i, .carousel-customized .carousel-control.right i{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.carousel-customized .carousel-inner .item h1, .carousel-customized .carousel-inner .item h3{ font-family: 'Raleway', 'sans-serif'; font-weight: 100; }
+.carousel-customized .carousel-inner .item h1 label, .carousel-customized .carousel-inner .item h3 label{ font-family: 'Raleway', 'sans-serif'; }
+.carousel-customized .carousel-inner .item p{ font-family: 'Proxima Nova', 'sans-serif'; margin-bottom: 30px; letter-spacing: 1px; }
+.carousel-customized .carousel-inner .item .btn-radius-outline{ border: 1px solid white; border-radius: 20px; color: white; }
+
+/* Helper Classes */
+.center-vh{ position: absolute; top: 50%; left: 50%; width: 100%; text-align: center; transform: translate(-50%, -50%); }
+.btn-radius-outline{ border: 1px solid transparent; }
+.btn-success{ background-color: #17daa3; color: white; border-color: transparent; }
+.btn-success:hover{ border: 1px solid #17daa3; background-color: white; color: #17daa3; }
+.btn-radius{ border-radius: 20px; border-radius: 20px; padding-left: 2em; padding-right: 2em; }
